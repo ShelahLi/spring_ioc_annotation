@@ -7,7 +7,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class SpringDemo1 {
     @Test
     public void demo1(){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
 
         UserService userService = (UserService) applicationContext.getBean("userService");
 
@@ -18,7 +19,8 @@ public class SpringDemo1 {
 
     @Test
     public void demo2(){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
 
         UserService userService = (UserService) applicationContext.getBean("userService");
 
@@ -27,7 +29,8 @@ public class SpringDemo1 {
 
     @Test
     public void demo3(){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
 
         UserService userService = (UserService) applicationContext.getBean("userService");
 

@@ -17,8 +17,8 @@ import javax.annotation.Resource;
 public class UserService {
     @Value("米饭")
     private String something;
-/*    @Autowired
-    @Qualifier("userDao")*/
+//    @Autowired
+//    @Qualifier("userDao")
     @Resource(name="userDao")
     private UserDao userDao;
 
